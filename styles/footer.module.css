@@ -1,0 +1,130 @@
+.grid {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(3, minmax(33%, auto));
+  width: 100%;
+  background-color: var(--primaryColor);
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  text-align: left;
+  border-left: 1 solid #fff;
+  border-radius: var(--border-radius);
+  background: rgba(var(--card-rgb), 0);
+  border: 1px solid rgba(var(--card-border-rgb), 0);
+  transition: background 200ms, border 200ms;
+}
+
+.card span {
+  display: inline-block;
+  transition: transform 200ms;
+}
+
+.card h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  color: #fff;
+}
+.card h5 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.card p {
+  color: #fff;
+  margin-top: 20px;
+  padding-left: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.card ul {
+  margin-left: 20px;
+  padding-left: 100px;
+  text-decoration: none;
+}
+.card ul li {
+  text-transform: capitalize;
+  line-height: 1rem;
+  list-style-type: none;
+}
+
+.card ul li a {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.card ul li a:hover {
+  color: var(--NavContact);
+  font-weight: bold;
+  transition: 1ms;
+}
+
+.card hr {
+  color: var(--primaryColor);
+}
+.copyright {
+  padding-top: 10px;
+  border-top: 1px solid #fff;
+  justify-content: center;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  background-color: var(--primaryColor);
+  font-size: small;
+}
+.copyright .containerCopyright {
+  width: 50%;
+}
+
+.copyright .containerCopyright ul li {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.copyright a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.copyright a:hover {
+  font-weight: bold;
+  color: #17242a !important;
+}
+@media (max-width: 858px) {
+  .grid {
+    display: block;
+  }
+  .card h1 {
+    text-align: center;
+    margin: 0.5rem;
+    color: #fff;
+  }
+
+  .card hr {
+    color: #fff;
+  }
+
+  .card p {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .card ul {
+    margin-left: 60px;
+    text-decoration: none;
+  }
+  .copyright {
+    height: fit-content;
+  }
+}

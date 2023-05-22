@@ -1,0 +1,116 @@
+body.activeModal {
+  overflow-x: hidden;
+}
+
+.btnModal {
+  padding: 10px 20px;
+  margin: 100px auto 0;
+  font-size: 18px;
+}
+
+.modal {
+  overflow-y: scroll;
+}
+
+.modal,
+.overlay {
+  width: 120vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+.headerModal {
+  background-color: var(--primaryColor);
+  padding: 0.05rem 0rem;
+  border-radius: 0.35rem;
+  text-align: center;
+}
+
+.overlay {
+  background: rgba(49, 49, 49, 0.2);
+}
+.modalContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  padding: 14px 28px;
+  border-radius: 3px;
+}
+.insideContent {
+  display: flex;
+}
+
+.closeModal {
+  position: absolute;
+  top: 13px;
+  padding: 5px;
+  right: 10px;
+  border: none;
+}
+.postMobileDiv {
+  width: 50%;
+}
+.imageContainerDetailed {
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  position: unset !important;
+  text-align: center;
+}
+.imageDetailed {
+  object-fit: contain;
+  width: 80% !important;
+  position: relative !important;
+  height: unset !important;
+  object-fit: cover;
+  animation-name: fade;
+  animation-duration: 1s;
+  border-radius: 0.35rem;
+}
+
+.image:hover {
+  padding: 0.5rem;
+  transform: scale(1.1);
+}
+
+@media (min-width: 701px) and (max-width: 1120px) {
+  .modalContent {
+    top: 110%;
+    left: 40%;
+  }
+}
+@media (max-width: 700px) {
+  .modalContent {
+    top: 120%;
+    left: 40%;
+  }
+
+  .modal,
+  .overlay {
+    width: 130vw;
+    height: 200vh;
+  }
+  .insideContent {
+    display: block;
+    margin-bottom: 30px;
+    font-size: smaller;
+  }
+  .insideContent h5 {
+    font-size: small;
+  }
+  .postMobileDiv {
+    margin-top: 80px;
+    width: 100%;
+  }
+
+  .imageContainerDetailed {
+    width: 100%;
+    margin-top: 60px;
+  }
+}

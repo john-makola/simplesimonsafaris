@@ -1,0 +1,48 @@
+.content {
+  padding: 1rem;
+  background: var(--contactme);
+}
+.button {
+  margin-top: 5px;
+  width: fit-content;
+  padding: 5px;
+  border: 2rem;
+  border-radius: 5px;
+  color: var(--backgroundColor);
+  font-size: 1rem;
+  cursor: pointer;
+  justify-content: right;
+  align-items: flex-end;
+  background-color: var(--primaryColor);
+}
+.button:hover {
+  align-items: flex-end;
+  font-weight: 600;
+  color: var(--primaryColor);
+  background-color: var(--techStackBar);
+  transform: 0.75s;
+}
+
+.button[disabled] {
+  background-color: var(--secondaryColor);
+  color: var(--backgroundColor);
+}
+
+@media (max-width: 700px) {
+  .featured {
+    display: none;
+  }
+  .imageContainer {
+    justify-content: center;
+    width: 100%;
+  }
+  .content {
+    width: 100%;
+    margin-top: -65px;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(1, auto);
+  }
+}

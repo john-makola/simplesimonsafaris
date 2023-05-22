@@ -1,0 +1,167 @@
+body.activeModal {
+  overflow-y: hidden;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(25%, auto));
+  max-width: 100%;
+  padding: 1rem 4rem;
+}
+
+.card {
+  width: 280px !important;
+  border-radius: var(--border-radius);
+  background: var(--cardBackground);
+  border: 1px solid rgba(var(--card-border-rgb), 0);
+  transition: background 200ms, border 200ms;
+}
+
+.button {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  color: var(--lightBlue);
+  font-weight: bold;
+  cursor: pointer;
+  background-color: var(--greyCardTop);
+}
+.button:hover {
+  background-color: var(--primaryColor);
+}
+.buttonB {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  color: var(--lightBlue);
+  font-weight: bold;
+  cursor: pointer;
+  background-color: var(--primaryColor);
+}
+.buttonB:hover {
+  background-color: var(--NavContact);
+}
+
+.title {
+  padding: 0.25rem;
+  background-color: var(--greyCardTop);
+  align-items: center;
+  border-radius: 0.5rem;
+  margin-bottom: 2px;
+}
+.title h6 {
+  text-align: center;
+  color: #fff;
+}
+
+.title p {
+  text-align: center;
+  color: #374141;
+  line-height: 0.55;
+  word-wrap: break-word;
+}
+
+.hikeDetails {
+  height: 200px;
+  padding: 0.25rem;
+  border-radius: 5px;
+}
+.hikeDetails p {
+  color: #374141;
+  padding: 0.25rem;
+}
+
+.hikeDetails ul li {
+  list-style: none;
+}
+
+.hikeDetails p:hover {
+  font-weight: bold;
+}
+.bookHike {
+  margin-top: 2px;
+}
+
+.modal {
+  position: "fixed";
+  top: "50%";
+  left: "50%";
+  transform: "translate(-50%, -50%)";
+  background-color: "#FFF";
+  padding: "50px";
+  z-index: 1;
+}
+.imageContainer {
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+  align-items: center;
+  text-align: center;
+  position: unset !important;
+}
+.image {
+  object-fit: contain;
+  width: 85% !important ;
+  position: relative !important;
+  height: unset !important;
+  object-fit: cover;
+  animation-name: fade;
+  animation-duration: 1s;
+  border-radius: 0.35rem;
+}
+
+.image:hover {
+  padding: 0.5rem;
+  transform: scale(1.1);
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    background: var(--lightBlue);
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+  }
+
+  .card:hover span {
+    transform: translateX(4px);
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 900px) and (max-width: 1200px) {
+  .grid {
+    padding: 1rem 1rem;
+    grid-template-columns: repeat(4, 25%);
+  }
+  .card {
+    width: 200px !important;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+  .grid {
+    padding: 1rem 6rem;
+    grid-template-columns: repeat(2, 50%);
+  }
+  .card {
+    width: 300px !important;
+  }
+}
+@media (width <= 700px) {
+  .grid {
+    padding: 1rem;
+    grid-template-columns: repeat(2, 50%);
+  }
+  .card {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+  .image:hover {
+    transform: none;
+  }
+  .hikeDetails {
+    height: 150px;
+  }
+}

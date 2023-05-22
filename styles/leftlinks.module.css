@@ -1,0 +1,143 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .card {
+    width: 150%;
+    text-align: left;
+    border-left: 1 solid #fff;
+    border-radius: var(--border-radius);
+    background: rgba(var(--card-rgb), 0);
+    border: 1px solid rgba(var(--card-border-rgb), 0);
+    transition: background 200ms, border 200ms;
+  }
+  .card ul li a {
+    color: var(--primaryColor);
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+  .card p{
+    font-weight: bold;
+  }
+  
+  .card ul li a:hover {
+    color: var(--NavContact);
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 1ms;
+  }
+  .column1 {
+    width: 30%;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .descriptionContainer {
+    background: var(--backgroundColor);
+    padding: 1.5rem;
+  }
+  
+  .imageContainer {
+    position: unset !important;
+    width: 60% !important;
+  }
+  
+  .image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+    border-top-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+    transition: transform 0.2s;
+  }
+  
+  .image:hover {
+    transform: scale(1.2);
+  }
+  .column2 {
+    width: 70%;
+    padding: 0.5rem;
+    margin-right: 4rem;
+  }
+  .column2 .titles {
+    padding-left: 1.5rem;
+  }
+  .column2 p {
+    font-size: 0.95rem;
+    text-align: justify;
+  }
+  .column2 h3 {
+    color: var(--primaryColor);
+    font-weight: 700;
+  }
+  .column2 h2 {
+    color: var(--secondaryColor);
+    font-weight: 700;
+  }
+  .column2 h5 {
+    color: var(--primaryColor);
+    font-weight: 700;
+  }
+  
+  .column1 ul {
+    padding-left: 50px;
+  }
+  .column1 ul li {
+    font-size: 1rem;
+    list-style-type: none;
+    line-height: 0.5rem;
+  }
+  .column1 a {
+    font-weight: bold;
+    color: var(--primaryColor);
+  }
+  .column1 a:hover {
+    color: var(--hoverColor) !important;
+  }
+  .modal {
+    position: "fixed";
+    top: "50%";
+    left: "50%";
+    transform: "translate(-50%, -50%)";
+    background-color: "#FFF";
+    padding: "50px";
+    z-index: 1000;
+  }
+  .button {
+    width: 20%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: var(--lightBlue);
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--greyCardTop);
+  }
+  .button:hover {
+    background-color: var(--primaryColor);
+  }
+  
+  @media (max-width: 700px) {
+    .imageContainer {
+      width: 100% !important;
+    }
+    .image{
+      display: none;
+    }
+    .card{
+      display: none;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+    .column1 {
+      width: 100%;
+    }
+    .column2 {
+      width: 100%;
+    }
+  }
+  

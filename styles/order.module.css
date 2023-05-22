@@ -1,0 +1,66 @@
+.content {
+  padding: 0.5rem;
+  background: var(--contactme);
+}
+.formInput {
+  background-color: var(--lightBlue);
+  margin-right: 3px;
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.button {
+  margin-top: 5px;
+  width: fit-content;
+  padding: 5px;
+  border: 2rem;
+  border-radius: 6px;
+  color: var(--lightBlue);
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  justify-content: right;
+  align-items: flex-end;
+  background-color: var(--primaryColor);
+}
+.button:hover {
+  align-items: flex-end;
+  font-weight: bold;
+  color: var(--primaryColor);
+  background-color: var(--NavContact);
+  transform: 0.75s;
+}
+
+.button[disabled] {
+  background-color: var(--NavContact);
+  color: var(--lightBlue);
+}
+
+@media (max-width: 700px) {
+  .featured {
+    display: none;
+  }
+  .imageContainer {
+    justify-content: center;
+    width: 100%;
+  }
+  .content {
+    width: 100%;
+    margin-top: -65px;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(1, auto);
+  }
+  .formInput {
+    background-color: var(--lightBlue);
+    align-items: center;
+    display: block;
+    font-weight: bold;
+    margin-top:2;
+    border-radius: 5px;
+  }
+}

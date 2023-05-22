@@ -1,0 +1,216 @@
+.imageContainer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: unset !important;
+}
+.image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+  object-fit: cover;
+}
+.imageSimon {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+  object-fit: cover;
+}
+.about {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutLeftSide {
+  padding: 0 50px;
+  width: 70%;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+.aboutLeftSide span {
+  font-weight: bold;
+  color: var(--primaryColor);
+}
+.aboutRightSide {
+  width: 30%;
+  margin-top: -330px;
+}
+
+.subscribe {
+  margin-top: -80px;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+.subscribeA {
+  width: 50%;
+  text-align: center;
+  font-weight: 800;
+  padding-top: 10px;
+}
+
+.subscribe span {
+  color: var(--primaryColor);
+  font-weight: bold;
+}
+.subscribeB {
+  width: 50%;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+.imageSubscribeContainer {
+  width: 100%;
+}
+.imageSubscribe {
+  object-fit: cover;
+  width: 70% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+.subscribeA h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.subscribeA a:hover {
+  font-weight: bold;
+  color: var(--primaryColor);
+}
+.subscribeA span:hover {
+  color: var(--NavContact);
+}
+.subscribeB a:hover {
+  color: var(--NavContact) !important;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  92% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .aboutLeftSide {
+    padding: 5px;
+    width: 60%;
+    font-size: 1rem;
+  }
+  .aboutRightSide {
+    width: 50%;
+    margin-top: -400px;
+  }
+  .imageSubscribeContainer {
+    width: 70%;
+  }
+  .subscribeA h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 992px) {
+  .aboutLeftSide {
+    padding: 5px;
+    width: 60%;
+    font-size: 1rem;
+  }
+  .aboutRightSide {
+    width: 50%;
+    margin-top: -30px;
+  }
+  .subscribeA h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .imageContainer {
+    margin: 5px 0;
+  }
+
+  .imageSimon {
+    width: 70% !important;
+  }
+  .imageSubscribeContainer {
+    width: 70%;
+  }
+  .imageSubscribe {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .about {
+    margin-top: -10px;
+    display: block;
+    padding: 0px;
+  }
+  .aboutLeftSide {
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+  .aboutRightSide {
+    width: 100%;
+    margin-top: -30px;
+  }
+  .subscribeA h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .subscribe {
+    margin-top: -70px;
+    width: 100%;
+    align-items: center;
+  }
+  .imageContainer {
+    width: 100%;
+  }
+  .imageSimon {
+    width: 100% !important;
+  }
+  .imageSubscribe {
+    width: 100% !important;
+  }
+  .imageSubscribeContainer {
+    width: 110%;
+  }
+}
+
+@keyframes cf3FadeInOut {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

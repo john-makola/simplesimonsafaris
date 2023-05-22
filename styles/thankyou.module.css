@@ -1,0 +1,115 @@
+.grid {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(2, minmax(25%, auto));
+  background-color: #ffffff80;
+}
+
+.content {
+  margin: 50px 0px;
+  width: 100%;
+  padding: 30px;
+  justify-content: left;
+}
+
+.content p {
+  justify-content: center;
+  text-align: justify;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  color: rgb(var(--foreground-rgb));
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.content h2 {
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.content ul {
+  background-color: #addedc;
+  padding: 20px 100px;
+  list-style-type: none;
+}
+.content ul li {
+  justify-content: center;
+  text-align: justify;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+.content ol {
+  background-color: #addedc;
+  padding: 20px 100px;
+}
+.content ol li {
+  justify-content: center;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+.button {
+  margin-top: -40px;
+  width: "40px";
+  height: fit-content;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  justify-content: right;
+  align-items: flex-end;
+  background-color: #17242a;
+}
+.button:hover {
+  align-items: flex-end;
+  background-color: #3aafa9;
+  transform: 0.75s;
+}
+
+.imageContainer {
+
+  width: 30%;
+  position: unset !important;
+}
+
+.image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+@media (max-width: 700px) {
+  .grid {
+    display: block;
+  }
+  .imageContainer {
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    padding: 10px;
+    width: 60%;
+    margin-bottom: 0px;
+  }
+  .content {
+    margin-top: 5px;
+    padding: 30px;
+    text-align: center;
+  }
+  .content p {
+    font-size: 0.85rem;
+    word-wrap: break-word;
+  }
+  .content h1 {
+    font-size: 1rem;
+  }
+  .content h2 {
+    font-size: 0.85rem;
+  }
+  .content ul {
+    padding: 5px 20px;
+  }
+}
